@@ -17,20 +17,25 @@ html {
 }
 
 /* header */
-.header{
+.header {
     background-color: #191919;
 }
+
 .navbar-nav {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Bauhaus 93', sans-serif;
     text-transform: uppercase;
-    font-weight: 600;
 }
+
 .nav-link {
     color: white
 }
+
 .nav-link:hover {
     color: white
+}
+
+.bt-redes:hover {
+    transform: scale(1.2);
 }
 
 /* sections-banner */
@@ -78,7 +83,7 @@ html {
     transform: scale(1.2);
 }
 
-/* carousel */
+/* carousel-nuevos lanzamientos */
 .cd {
     max-width: 1200px;
     border-radius: 50px;
@@ -118,6 +123,10 @@ html {
 
 .section-dest {
     margin-top: 2rem;
+}
+
+.btn-dest {
+    border-radius: 30px;
 }
 
 /* section-categorias */
@@ -180,11 +189,13 @@ html {
     color: white;
 }
 
-.btn {
+.btn-cat {
     font-family: 'Barlow Condensed', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     border-radius: 30px;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 /* footer */
@@ -214,25 +225,29 @@ html {
     opacity: unset;
 }
 
-.bt-redes {
-    font-size: 2rem;
-    color: white
-    
-}
-.bt-redes:hover {
-    transform: scale(1.2);
+/* contacto */
+.h-form {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
 }
 
-/* pages-remeras */
+.form-group {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* pages */
 
 /* header */
-.header-pages{
+.header-pages {
     background-color: #191919;
 }
-/* section */
+
+/* section-remeras */
 .div-card {
     border-radius: 50px;
 }
+
 .img-card {
     border-radius: 50px;
 }
