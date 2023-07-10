@@ -194,7 +194,7 @@ html {
 }
 
 .logo-footer {
-    height: 100px;
+    height: 80px;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,8 +215,7 @@ html {
 }
 
 .bt-redes {
-    font-size: 3rem;
-    min-width: 38px;
+    font-size: 2rem;
     color: white
     
 }
