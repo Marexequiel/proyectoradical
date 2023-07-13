@@ -1,0 +1,255 @@
+/* font-family: 'Bauhaus 93', sans-serif; */
+/* font-family: 'Barlow Condensed', sans-serif;
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.body {
+    background-color: #e5e5e5;
+}
+
+/* header */
+.header {
+    background-color: #191919;
+}
+
+.navbar-nav{
+    font-family: 'Bauhaus 93', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    .nav-item{
+        list-style-type: none;
+        .nav-link{
+            text-decoration: none;
+            color: white;
+        }
+        .nav-link:hover{
+            color: white;
+        }
+    }
+}
+.bt-redes:hover {
+    transform: scale(1.2);
+}
+
+/* sections-banner */
+.logo {
+    height: 100px;
+    object-fit: cover;
+}
+
+.banner {
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    position: relative;
+    text-align: center;
+}
+
+.div-h {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    padding: 0 1rem;
+    transform: translate(-50%, -50%);
+}
+
+.h-1-a {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: white;
+}
+
+.h-1-b {
+    font-family: 'Bauhaus 93', sans-serif;
+    text-transform: uppercase;
+    font-size: 5rem;
+    color: white;
+}
+
+/* datos-pagos-envios */
+.datos {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700;
+}
+
+.card-link:hover {
+    transform: scale(1.2);
+}
+
+/* carousel-nuevos lanzamientos */
+.cd {
+    max-width: 1200px;
+    border-radius: 50px;
+    background-color: black;
+}
+
+.carousel-img {
+    height: 700px;
+    width: 350px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    border-radius: 50px;
+}
+
+.h-carousel {
+    font-family: 'Bauhaus 93', sans-serif;
+}
+
+.p-carousel {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+/* sections-destacados */
+.art-destacados {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+.h-destacados {
+    font-family: 'Bauhaus 93', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.section-dest {
+    margin-top: 2rem;
+}
+
+.btn-dest {
+    border-radius: 30px;
+}
+
+/* section-categorias */
+.h-categorias {
+    font-family: 'Bauhaus 93', sans-serif;
+    text-decoration: none;
+    font-size: 3rem;
+    margin-top: 4rem;
+}
+
+.img-2 {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.img-1 {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.section-cat {
+    margin-top: 5rem;
+}
+
+.d-1 {
+    position: relative;
+}
+
+.bt-1 {
+    position: absolute;
+    bottom: 2%;
+    left: 6%;
+}
+
+.d-2 {
+    position: relative;
+}
+
+.bt-2 {
+    position: absolute;
+    bottom: 52%;
+    left: 6%;
+}
+
+.d-3 {
+    position: relative;
+}
+
+.bt-3 {
+    position: absolute;
+    bottom: 4%;
+    left: 6%;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn-cat {
+    font-family: 'Barlow Condensed', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 30px;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/* footer */
+.footer {
+    background-color: #191919;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.logo-footer {
+    height: 80px;
+}
+
+@media screen and (min-width: 768px) {
+    .ocultar-line {
+        display: none;
+    }
+}
+
+.li-item {
+    list-style-type: none;
+}
+
+.line {
+    height: 5px;
+    border: none;
+    background: #e5e5e5;
+    opacity: unset;
+}
+
+/* contacto */
+.h-form {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 900;
+}
+
+.form-group {
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+
+/* pages */
+
+/* header */
+.header-pages {
+    background-color: #191919;
+}
+
+/* section-remeras */
+.div-card {
+    border-radius: 50px;
+}
+
+.img-card {
+    border-radius: 50px;
+}
