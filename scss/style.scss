@@ -8,7 +8,7 @@
 }
 
 .navbar-nav {
-    font-family: 'Bauhaus 93', sans-serif;
+    font-family: $font-family-rad;
     text-transform: uppercase;
     font-size: 2rem;
 
@@ -56,21 +56,21 @@
     text-transform: uppercase;
 
     .h-1-a {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: $font-family-bar;
         font-size: $font-h-medium;
         text-transform: lowercase;
         font-weight: 700;
     }
 
     .h-1-b {
-        font-family: 'Bauhaus 93', sans-serif;
+        font-family: $font-family-rad;
         font-size: $font-h-large;
     }
 }
 
 /* datos-pagos-envios */
 .datos {
-    font-family: 'Barlow Condensed', sans-serif;
+    font-family: $font-family-bar;
     font-weight: 700;
 
     .card-link:hover {
@@ -96,7 +96,7 @@
 }
 
 .card__nl {
-    font-family: 'Bauhaus 93', sans-serif;
+    font-family: $font-family-rad;
     color: white;
 
     &__link {
@@ -107,7 +107,7 @@
     }
 
     &__p {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: $font-family-bar;
         font-size: 1.5rem;
     }
 }
@@ -121,45 +121,37 @@ h2 {
 
 .section-dest {
     margin-top: 2rem;
-
     .art-destacados {
-        font-family: 'Barlow Condensed', sans-serif;
+        font-family: $font-family-bar;
         text-transform: uppercase;
     }
-
     .btn-dest {
         border-radius: 30px;
+        font-weight: 600;
     }
 }
 
 /* section-categorias */
 .section-cat {
     margin-top: 5rem;
-
     .img-2 {
         height: 250px;
         width: 100%;
         object-fit: cover;
         border-radius: 20px;
     }
-
     .img-1 {
+        @extend .img-2;
         height: 500px;
-        width: 100%;
-        object-fit: cover;
-        border-radius: 20px;
     }
-
     .d-1 {
         position: relative;
-
         .bt-1 {
             position: absolute;
             bottom: 2%;
             left: 6%;
         }
     }
-
     .d-2 {
         position: relative;
 
@@ -243,29 +235,23 @@ h2 {
     }
 }
 
-
-
 /* estilos-pages */
 
 /* header-pages */
 .header-pages {
     background-color: #191919;
 }
-
-/* pages- */
+.card-hoodie {
+    width: 300px;
+}
+.card-accesorios{
+    @extend .card-hoodie;
+}
 
 // estilos-cards-pages
 
-
-
-.card-hoodie {
-    width: 300px;
-    .div-card {
-        border-radius: 0 0 1rem 1rem;
-        font-family: $font-family-bar;
-        color: black;
-        text-transform: uppercase;
-        align-items: center;
+.div-card {
+        @include cards;
 
         h3 {
             @include card-body (2rem, 600);
@@ -279,41 +265,3 @@ h2 {
             @include card-body (1.5rem, 600);
         }
     }
-}
-
-
-
-
-// pages-hoodies
-
-// .container__hoodies {
-//     width: 100%;
-//     max-width: 1200px;
-//     display: grid;
-//     justify-content: center;
-//     text-align: center;
-//     flex-wrap: wrap;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-template-rows: repeat(2, 1fr);
-//     gap: 3rem;
-//     margin-top: 3rem;
-// .card__1 {
-//     grid-column: 4 / 7;
-//     grid-row: 1 / 2;
-// }
-
-// .card__2 {
-//     grid-column: 7 / 10;
-//     grid-row: 1 / 2;
-//     }
-// }
-
-// .card__3 {
-//     grid-column: 4 / 7;
-//     grid-row: 2 / 3;
-// }
-
-// .card__4 {
-//     grid-column: 7 / 10;
-//     grid-row: 2 / 3;
-// }

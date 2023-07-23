@@ -10,7 +10,7 @@
     font-size: $size;
     font-weight: $weigth;
 }
-@mixin cards ($border, $family, $fontcolor, $text){
+@mixin cards{
     border-radius: 0 0 1rem 1rem;
     font-family: $font-family-bar;
     color: black;
