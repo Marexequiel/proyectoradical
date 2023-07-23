@@ -6,3 +6,13 @@
     color: black;
     text-transform: uppercase;
 }
+@mixin card-body ($size, $weigth){
+    font-size: $size;
+    font-weight: $weigth;
+}
+@mixin cards ($border, $family, $fontcolor, $text){
+    border-radius: 0 0 1rem 1rem;
+    font-family: $font-family-bar;
+    color: black;
+    text-transform: uppercase;
+}

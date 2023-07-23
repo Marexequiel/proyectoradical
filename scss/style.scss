@@ -1,25 +1,31 @@
 @import "./utilities/variables";
-@import "./utilities/resetstyles";
+@import "./globals/resetstyles";
+@import "./utilities/mixin";
 
 /* header */
 .header {
     background-color: #191919;
 }
+
 .navbar-nav {
     font-family: 'Bauhaus 93', sans-serif;
     text-transform: uppercase;
     font-size: 2rem;
+
     .nav-item {
         list-style-type: none;
+
         .nav-link {
             text-decoration: none;
             color: white;
         }
+
         .nav-link:hover {
             color: white;
         }
     }
 }
+
 .bt-redes:hover {
     transform: scale(1.2);
 }
@@ -30,6 +36,7 @@
     height: 100px;
     object-fit: cover;
 }
+
 .banner {
     background-image: url(../img/banner.jpg);
     background-size: cover;
@@ -47,12 +54,14 @@
     transform: translate(-50%, -50%);
     color: white;
     text-transform: uppercase;
+
     .h-1-a {
         font-family: 'Barlow Condensed', sans-serif;
         font-size: $font-h-medium;
         text-transform: lowercase;
         font-weight: 700;
     }
+
     .h-1-b {
         font-family: 'Bauhaus 93', sans-serif;
         font-size: $font-h-large;
@@ -63,6 +72,7 @@
 .datos {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 700;
+
     .card-link:hover {
         transform: scale(1.2);
     }
@@ -73,24 +83,29 @@
     max-width: 1200px;
     border-radius: 50px;
     background-color: black;
+
     .carousel-img {
         height: 700px;
         width: 350px;
         object-fit: cover;
     }
+
     .carousel-inner {
         border-radius: 50px;
     }
 }
+
 .card__nl {
     font-family: 'Bauhaus 93', sans-serif;
     color: white;
+
     &__link {
         text-transform: uppercase;
         font-size: 3rem;
         color: white;
         text-decoration: none;
     }
+
     &__p {
         font-family: 'Barlow Condensed', sans-serif;
         font-size: 1.5rem;
@@ -99,22 +114,19 @@
 
 // titulos-destacados-categorias
 h2 {
-    font-family: 'Bauhaus 93', sans-serif;
-    text-decoration: none;
-    font-size: 3rem;
-    margin-top: 4rem;
-    color: black;
-    text-transform: uppercase;
+    @include titulos;
 }
 
 /* sections-destacados */
 
 .section-dest {
     margin-top: 2rem;
+
     .art-destacados {
         font-family: 'Barlow Condensed', sans-serif;
         text-transform: uppercase;
     }
+
     .btn-dest {
         border-radius: 30px;
     }
@@ -123,42 +135,51 @@ h2 {
 /* section-categorias */
 .section-cat {
     margin-top: 5rem;
+
     .img-2 {
         height: 250px;
         width: 100%;
         object-fit: cover;
         border-radius: 20px;
     }
+
     .img-1 {
         height: 500px;
         width: 100%;
         object-fit: cover;
         border-radius: 20px;
     }
+
     .d-1 {
         position: relative;
+
         .bt-1 {
             position: absolute;
             bottom: 2%;
             left: 6%;
         }
     }
+
     .d-2 {
         position: relative;
+
         .bt-2 {
             position: absolute;
             bottom: 52%;
             left: 6%;
         }
     }
+
     .d-3 {
         position: relative;
+
         .bt-3 {
             position: absolute;
             bottom: 4%;
             left: 6%;
         }
     }
+
     .btn-cat {
         font-family: 'Barlow Condensed', sans-serif;
         text-transform: uppercase;
@@ -167,6 +188,7 @@ h2 {
         border-radius: 30px;
         padding-left: 10rem;
         padding-right: 10rem;
+
         .btn:hover {
             color: white;
         }
@@ -178,42 +200,50 @@ h2 {
     background-color: #191919;
     font-family: 'Barlow Condensed', sans-serif;
     color: white;
+
     .li-item {
         list-style-type: none;
         font-size: 2rem;
+
         & a {
             text-decoration: none;
             color: white;
         }
     }
+
     p {
         font-size: 1.5rem;
     }
-}
 
-.logo-footer {
-    height: 80px;
-}
-@media screen and (min-width: 768px) {
-    .ocultar-line {
-        display: none;
+    .logo-footer {
+        height: 80px;
+    }
+
+    @media screen and (min-width: 768px) {
+        .ocultar-line {
+            display: none;
+        }
+    }
+
+    .line {
+        height: 5px;
+        border: none;
+        background: #e5e5e5;
+        opacity: unset;
+    }
+
+    /* contacto */
+    .h-form {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 900;
+
+        .form-group {
+            font-family: 'Barlow Condensed', sans-serif;
+        }
     }
 }
-.line {
-    height: 5px;
-    border: none;
-    background: #e5e5e5;
-    opacity: unset;
-}
 
-/* contacto */
-.h-form {
-    font-family: 'Barlow Condensed', sans-serif;
-    font-weight: 900;
-}
-.form-group {
-    font-family: 'Barlow Condensed', sans-serif;
-}
+
 
 /* estilos-pages */
 
@@ -222,22 +252,68 @@ h2 {
     background-color: #191919;
 }
 
-/* pages-remeras */
-.div-card {
-    border-radius: 50px;
-    font-family: $font-family-bar;
-    color: white;
-    text-transform: uppercase;
-    .img-card {
-        border-radius: 50px;
-    }
-    h3 {
-        font-size: 2rem;
-    }
-    p {
-        font-size: 2.5rem;
-    }
-    a {
-        font-size: 2rem;
+/* pages- */
+
+// estilos-cards-pages
+
+
+
+.card-hoodie {
+    width: 300px;
+    .div-card {
+        border-radius: 0 0 1rem 1rem;
+        font-family: $font-family-bar;
+        color: black;
+        text-transform: uppercase;
+        align-items: center;
+
+        h3 {
+            @include card-body (2rem, 600);
+        }
+
+        p {
+            @include card-body (2rem, 600);
+        }
+
+        .btn-pages {
+            @include card-body (1.5rem, 600);
+        }
     }
 }
+
+
+
+
+// pages-hoodies
+
+// .container__hoodies {
+//     width: 100%;
+//     max-width: 1200px;
+//     display: grid;
+//     justify-content: center;
+//     text-align: center;
+//     flex-wrap: wrap;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-template-rows: repeat(2, 1fr);
+//     gap: 3rem;
+//     margin-top: 3rem;
+// .card__1 {
+//     grid-column: 4 / 7;
+//     grid-row: 1 / 2;
+// }
+
+// .card__2 {
+//     grid-column: 7 / 10;
+//     grid-row: 1 / 2;
+//     }
+// }
+
+// .card__3 {
+//     grid-column: 4 / 7;
+//     grid-row: 2 / 3;
+// }
+
+// .card__4 {
+//     grid-column: 7 / 10;
+//     grid-row: 2 / 3;
+// }
