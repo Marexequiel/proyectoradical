@@ -91,7 +91,7 @@ html {
     font-family: "Exo", sans-serif;
     font-size: 1.5rem; }
 
-h2 {
+.title {
   font-family: 'Bauhaus 93', sans-serif;
   text-decoration: none;
   font-size: 3rem;
@@ -192,7 +192,7 @@ h2 {
   font-family: "Exo", sans-serif;
   color: black;
   text-transform: uppercase; }
-  .div-card h3 {
+  .div-card h5 {
     font-size: 2rem;
     font-weight: 600; }
   .div-card p {

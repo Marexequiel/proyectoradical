@@ -114,7 +114,7 @@
 }
 
 // titulos-destacados-categorias
-h2 {
+.title {
     @include titulos;
 }
 
@@ -255,7 +255,7 @@ h2 {
 .div-card {
         @include cards;
 
-        h3 {
+        h5 {
             @include card-body (2rem, 600);
         }
 
